@@ -1,0 +1,86 @@
+section.news{
+    background-color:none;
+    
+}
+section.news>.col{
+    background-color: none;
+    display: flex;
+    width: 1000px;height: 300px; margin-bottom: 55px; margin-left: auto;margin-right: auto;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+}
+section.news>.col>.picture{
+    width: 50%;height: 100%;
+    filter: grayscale(30%) opacity(70%);
+    transition: filter 0.7s;
+}
+section.news>.col>.picture:hover{
+    filter: grayscale(0%) opacity(100%);
+}
+section.news>.col>.picture-1{
+    background-image: url(dog3.jpg);
+    background-size: cover;
+}
+section.news>.col>.picture-2{
+    background-image: url(dog4.jpg);
+    background-size: cover;
+}
+section.news>.col>.text{
+    background-color: none;
+    width: 50%;height: 75%;
+}
+section.news>.col>.text>.word{
+    padding: 40px;
+}
+section.news>.col>.text>.word>.title{
+    font-size: 1.5em;
+    margin-bottom: 25px;
+}
+section.news>.col>.text>.word>.story{
+    margin-bottom: 60px;
+    color: #888888;
+}
+section.news>.col>.text>.word>.line{
+    margin-bottom: 20px;
+}
+section.news>.col>.text>.word>.action{
+    font-size: 65%;color: #888888;
+}
+section.news>.col>.text>.word>.action>.left{
+    margin-right: 30px;
+}
+section>.footer{
+    height: 120px;
+    text-align: center;line-height: 120px;
+    background-color: black;
+    font-size: 90%; color: #ffffff;
+}
+@media (max-width:1170px){
+    section.news>.col{
+        width: 95%;
+    }
+    
+}
+@media (max-width:800px){  
+    section.news>.col{
+        width: 90%;height: 500px;
+        flex-direction: column;
+    }
+    section.news>.col>.picture{
+        height: 50%; 
+        width: 100%;
+    }
+    section.news>.col>.text{
+        width: 90%;
+        height: 50%;   
+    }
+    section.news>.col>.text>.word{
+        padding: 20px;
+    }
+    section.news>.col>.text>.word>.title{
+        font-size: 1.2em;
+        margin-bottom: 15px;
+    }
+    section.news>.col>.text>.word>.story{
+        margin-bottom: 20px;
+    }
+}
